@@ -3,7 +3,7 @@ import { getHerosByPublisher } from "../helpers"
 import { HeroCard } from "./";
 
 
-export const HeroList = ( {publisher} ) => {
+export const HeroList = ({ publisher }) => {
   const heroes = useMemo( () =>  getHerosByPublisher( publisher ), [publisher] );
   
   return (
